@@ -1,13 +1,26 @@
 {
-  "name": "projet-edgar",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "start": "node index.js",
-    "heroku-postbuild": "cd site-edgar-photo && yarn install && yarn build"
-  },
-  "dependencies": {
-    "express": "^4.16.4"
-  }
+   "name": "projet-edgar",
+   "version": "1.0.0",
+   "main": "index.js",
+   "license": "MIT",
+   "scripts": {
+      "start": "ts-node src/index.ts",
+      "heroku-postbuild": "cd site-edgar-photo && yarn install && yarn build"
+   },
+   "dependencies": {
+      "@material-ui/core": "^3.3.0",
+      "express": "^4.16.4",
+      "typeorm": "0.2.8",
+      "reflect-metadata": "^0.1.10",
+      "mysql": "^2.14.1"
+   },
+   "devDependencies": {
+      "@types/express": "^4.16.0",
+      "@types/node": "^8.0.29",
+      "pg": "^7.5.0",
+      "reflect-metadata": "^0.1.12",
+      "typeorm": "^0.2.8",
+      "typescript": "2.5.2",
+      "ts-node": "3.3.0"
+   }
 }

@@ -1,4 +1,7 @@
-const express = require("express");
+import * as express from "express";
+import "reflect-metadata";
+import { createConnection } from "typeorm";
+import { User } from "./src/entity/User";
 
 const app = express();
 

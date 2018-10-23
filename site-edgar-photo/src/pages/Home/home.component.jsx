@@ -35,9 +35,7 @@ class Home extends Component<PropsType> {
     return (
       <React.Fragment>
         <Header />
-        <HomeWrapper>
-          <HomeImage />
-        </HomeWrapper>
+        <HomeWrapper />
       </React.Fragment>
     );
   }
