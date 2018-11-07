@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Header from '../../components/Header';
 import homePageImage from '../../assets/img/home.jpg';
+import ContactForm from '../../components/ContactForm';
 
 const HomeWrapper = styled.section`
   display: flex;
@@ -35,7 +36,9 @@ class Home extends Component<PropsType> {
     return (
       <React.Fragment>
         <Header />
-        <HomeWrapper />
+        <HomeWrapper>
+          <ContactForm />
+        </HomeWrapper>
       </React.Fragment>
     );
   }
